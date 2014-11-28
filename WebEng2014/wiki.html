@@ -6,31 +6,44 @@
   </head>
 	<body>
 	<h3>Suche</h3>
-	<form action="http://de.wiktionary.org/wiki/Spezial:Suche" onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value" target="_blank">
-	<select name="uselang">
-	<option selected="selected" title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
-	<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
-	<option title="commons.wikimedia.org/wiki/Special:Search" value="de">Commons</option>
-	<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
-	<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
-	<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
-	</select>
-	<input type="text" name="search" size="20" />
-	<input type="submit" value="Suchen" />
-	</form>
-	<h3>Volltextsuche</h3>
-	<form action="http://de.wiktionary.org/wiki/Spezial:Suche" onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value" target="_blank">
-	<select name="fulltext">
-	<option selected="selected" title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
-	<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
-	<option title="commons.wikimedia.org/wiki/Special:Search" value="de">Commons</option>
-	<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
-	<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
-	<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
-	</select>
-	<input type="text" name="search" size="20" />
-	<input type="submit" value="Suchen" />
-	</form>
+	<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
+onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
+target="_blank">
+<label for="uselang">Suche</label> <select name="uselang"
+id="uselang">
+<option selected="selected"
+title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
+<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
+<option title="commons.wikimedia.org/wiki/Special:Search" value="de">Commons</option>
+<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
+<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
+<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
+</select> <label for="uselang1">Suchbegriff eingeben</label> <input type="text" id="uselang1"
+name="search" size="20" /> <input type="submit" value="Suchen" />
+</form>
+<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
+onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
+target="_blank">
+<h3>Volltextsuche</h3>
+<label for="fulltext">Volltextsuche</label> <select name="fulltext"
+id="fulltext">
+<option selected="selected"
+title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
+<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
+<option title="commons.wikimedia.org/wiki/Special:Search" value="de">Commons</option>
+<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
+<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
+<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
+</select> <label for="fulltext1">Volltext eingeben</label> <input type="text" id="fulltext1"
+name="search" size="20" /> <input type="submit" value="Suchen" />
+</form>
+
+<a href="http://wave.webaim.org/report#/davidmallinger1.cloudcontrolled.com/WebEng2014/wiki.html"
+      title="Explanation of WCAG 2.0 Level Triple-A Conformance" class="pull-right">
+  <img height="32" width="88" 
+          src="http://www.w3.org/WAI/wcag2AAA"
+          alt="Level Triple-A conformance, 
+          W3C WAI Web Content Accessibility Guidelines 2.0"></a>
 	<br><br>
 </body>
 </html>
