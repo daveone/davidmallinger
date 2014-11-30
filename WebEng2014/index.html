@@ -83,72 +83,42 @@ loadedobjects+=file+" " //Remember this object as being already added to page
   <div class="page-header" style="padding-left:1em">
   <h1>David Mallinger <small>5044032</small></h1>
   </div>
-  <div class="container">HeaderBild
-  <nav class="navbar navbar-inverse" role="navigation">
-	  <div class="container-fluid">
-   <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="javascript:ajaxpage('home.html', 'content');">Home</a>
-      <a class="navbar-brand" href="javascript:ajaxpage('impressum.html', 'content');">Impressum</a>
-      <a class="navbar-brand" href="javascript:ajaxpage('wiki.html', 'content');">Wikipedia</a>
-	</div>
-	</div>
-	</nav>
-  </div>
   <div class="container">
-  <div class="col-md-6" align="center">
-  <a href="http://www.codecademy.com"><img src="images/codecademy.png" alt="CodeCademy Webseite" height="100px" width="300px"/></a><br><br>
-  <a button type="button" class="btn btn-success" href="http://www.codecademy.com/DaveOne1990" target="_blank">CodeCademy Profil</button></a><br><br>
+  <img src="images/header.png" width="100%" height="auto"/>
+  <div class="row" style="margin-top: 1em;">
+  <div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      <a href="http://www.github.com"><img src="images/github.png" alt="Github Webseite" height="256px" width="256px"/></a>
+      <div class="caption" align="center">
+        <a button type="button" class="btn btn-primary" href="https://github.com/mxkmp29/max/pull/1" target="_blank">PullRequest an Maximilian Kamp</button></a><br><br>
+	<a button type="button" class="btn btn-primary" href="https://github.com/daveone/davidmallinger/pull/1" target="_blank">PullRequest von Maximilian Kamp</button></a><br>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6" align="center">
-  <a href="http://www.github.com"><img src="images/github.png" alt="Github Webseite" height="100px" width="300px"/></a><br><br>
-  <a button type="button" class="btn btn-success" href="https://github.com/mxkmp29/max/pull/1" target="_blank">PullRequest an Maximilian Kamp</button></a><br><br>
-	<a button type="button" class="btn btn-success" href="https://github.com/daveone/davidmallinger/pull/1" target="_blank">PullRequest von Maximilian Kamp</button></a><br><br>
+  <div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      <a href="http://www.codecademy.com"><img src="images/codecademy.png" alt="CodeCademy Webseite" height="256px" width="256px"/></a>
+      <div class="caption" align="center">
+        <a button type="button" class="btn btn-primary" href="http://www.codecademy.com/DaveOne1990" target="_blank">CodeCademy Profil</button></a><br><br>
+        <a button type="button" class="btn btn-primary" href="#" target="_blank">Platzhalter</button></a><br>
+      </div>
+    </div>
   </div>
+</div>
+  <ul class="nav nav-pills nav-justified" role="tablist">
+  <li role="presentation" class="active"><a href="javascript:ajaxpage('home.html', 'content');">Home</a></li>
+  <li role="presentation"><a href="javascript:ajaxpage('wiki.html', 'content');">WikiSearch</a></li>
+  <li role="presentation"><a href="javascript:ajaxpage('impressum.html', 'content');">Impressum</a></li>
+</ul>
   <div id="content">
   <h2>Herzlich Willkommen</h2>
 	<p>Auf der Internetpräsenz von David Mallinger, die während des IBS-Seminars erstellt wird.<p>
 	<p>Inhalte werden nach und nach eingepfelgt.</p>
   </div>
-  <nav class="navbar navbar-inverse" role="navigation">
-	<p class="navbar-brand">&copy; David Mallinger</p>
- 	</nav>
-  </div>
-  
-  <!-- 
-  <div class="page-header">
-  <h1>David Mallinger <small>5044032</small></h1>
-  </div>
-  <div class="container">
-  <nav class="navbar navbar-inverse" role="navigation">
-	  <div class="container-fluid">
-   <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="javascript:ajaxpage('home.html', 'content');">Home</a>
-      <a class="navbar-brand" href="javascript:ajaxpage('uebermich.html', 'content');">Über mich</a>
-      <a class="navbar-brand" href="javascript:ajaxpage('impressum.html', 'content');">Impressum</a>
-      <a class="navbar-brand" href="http://www.codecademy.com/DaveOne1990" target="_blank">CodeCademy</a>
-      <a class="navbar-brand" href="javascript:ajaxpage('wiki.html', 'content');">Wikipedia</a>
-	</div>
-	</div>
-	</nav>
-	<div id="content"></div>
-	<nav class="navbar navbar-inverse" role="navigation">
-	<p class="navbar-brand">&copy; David Mallinger</p>
- 	</nav>
-</div> 
-	-->
-  	
+<ul class="nav nav-pills nav-justified">
+ <li role="presentation" class="active" class="disable"><a href="#">&copy; David Mallinger</a></li>
+</ul>
+<br><br>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
