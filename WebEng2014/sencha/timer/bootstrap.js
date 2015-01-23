@@ -32,7 +32,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "../src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "../src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "../src/device/sqlite/Sencha.js",
-  "Timer": "app"
+  "timer": "app"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -667,7 +667,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "Timer.view.Main": []
+  "timer.view.Main": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1399,7 +1399,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
-  "Timer.view.Main": [
+  "timer.view.Main": [
     "widget.main"
   ]
 });

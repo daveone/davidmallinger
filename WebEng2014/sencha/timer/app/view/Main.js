@@ -1,33 +1,32 @@
-Ext.define('Timer.view.Main', {
-    extend: 'Ext.tab.Panel',
-    xtype: 'main',
-    requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
-    ],
-    config: {
+Ext.define('timer.view.Main', {
+	extend: "Ext.tab.Panel",
+	requires: ['timer.view.Home',
+	           'timer.view.Impressum',
+	           'timer.view.Timer'
+	],
+	
+	config: {
+		fullscreen: true,
         tabBarPosition: 'bottom',
+        id: 'tabBar',
+        items: [{
+        	
+            title: 'Home',
+            iconCls: 'home',
+            items: {xtype: 'welcome'}
+            
+        }, {
+            title: 'Timer',
+            iconCls: 'time',
+            items: {xtype: 'timerpanel'}
+            
+        }, {
+            title: 'Impressum',
+            iconCls: 'info',
+            scrollable: true,
+            items: {xtype: 'impressum'}
+            
+        }] // items
+	}
 
-        items: [
-            {
-                title: 'Welcome',
-                iconCls: 'home',
-
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Timer - David Mallinger'
-                },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
-                ].join("")
-            }
-        ]
-    }
 });

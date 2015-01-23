@@ -2,7 +2,7 @@
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */
-    "name": "Timer",
+    "name": "timer",
 
     /**
      * The file path to this application's front HTML document, relative to this app.json file
@@ -131,5 +131,5 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "82b36609-a603-4db5-a058-d1b58dfdc19e"
+    "id": "8a117e7f-cd1e-4bee-8cf7-8f3848ab1d84"
 }
