@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/val.js"></script>
+
+<title>Clientseitige Validierung</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style>
+#register-form {
+    background: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 25px 50px 10px;
+    width: 550px;
+}
+
+#register-form .fieldgroup {
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+}
+
+#register-form .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 110px;
+}
+
+#register-form .fieldgroup input, #register-form .fieldgroup textarea, #register-form .fieldgroup select {
+    float: right;
+    margin: 10px 0;
+    height: 25px;
+}
+
+#register-form .submit {
+    padding: 10px;
+    width: 220px;
+    height: 40px !important;
+}
+
+#register-form .fieldgroup label.error {
+    color: #FB3A3A;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+</style>
+
+<script type="text/javascript">
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+            $("#register-form").validate({
+                rules: {
+                    firstname: "required",
+                    lastname: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    },
+                    agree: "required"
+                },
+                messages: {
+                    firstname: "Bitte geben Sie ihren Vorname ein",
+                    lastname: "Bitte geben Sie ihren Nachnamen ein",
+                    password: {
+                        required: "Passwort eingeben",
+                        minlength: "Passwort benötigt mindestens 5 Zeichen"
+                    },
+                    email: "Bitte geben Sie eine E-Mail an",
+                    agree: "Bitte Akzeptieren Sie die AGB's"
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+        }
+    }
+
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+
+})(jQuery, window, document);
+</script>
+
+</head>
+<body>
+<div id="page-wrap">
+
+<div id="content">
+
+<h1>Clientseitige Validierung</h1>
+
+
+<form action="" method="post" id="register-form" novalidate="novalidate">
+
+    <h2>Benutzerregistrierung</h2>
+
+    <div id="form-content">
+        <fieldset>
+
+            <div class="fieldgroup">
+                <label for="firstname">Vorname</label>
+                <input type="text" name="firstname">
+            </div>
+
+            <div class="fieldgroup">
+                <label for="lastname">Nachname</label>
+                <input type="text" name="lastname">
+            </div>
+
+            <div class="fieldgroup">
+                <label for="email">E-Mail</label>
+                <input type="text" name="email">
+            </div>
+
+            <div class="fieldgroup">
+                <label for="password">Passwort</label>
+                <input type="password" name="password">
+            </div>
+
+            <div class="fieldgroup">
+                <p class="right">Hiermit akzeptieren Sie unsere AGB's.</p>
+                <input type="submit" value="Abschicken" class="submit">
+            </div>
+
+        </fieldset>
+    </div>
+
+</form>
+
+
+
+
+</div>
+
+</div>
+
+</div> 
+
+</body>
+</html>
